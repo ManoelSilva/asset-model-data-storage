@@ -21,7 +21,7 @@ dependencies = [
 Homepage = "https://github.com/ManoelSilva/asset-model-data-storage"
 
 [tool.setuptools.packages.find]
-where = ["asset_model_data_storage"]
+where = ["."]
 
 [project.optional-dependencies]
 test = [
