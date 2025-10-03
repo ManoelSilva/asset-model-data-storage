@@ -22,7 +22,7 @@ class DataStorageService:
             s3_bucket: S3 bucket name (optional, can be set via S3_BUCKET_NAME env var)
             base_path: Base path for local storage (optional, defaults to current directory)
         """
-        self.environment = environment or os.getenv('enviroment', 'SYSTEM').upper()
+        self.environment = environment or os.getenv('environment', 'SYSTEM').upper()
         self.s3_bucket = s3_bucket
         self.base_path = base_path
         self._storage_handler: Optional[DataStorageHandler] = None
